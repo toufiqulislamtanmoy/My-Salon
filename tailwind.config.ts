@@ -16,10 +16,15 @@ const config: Config = {
       colors: {
         primary: '#A8D5BA',   // Soft Mint Green
         secondary: '#E6E3F1', // Light Lavender
-        accent: '#FF6F61',    // Coral Pink
+        accent: '#5D52C2',    // Coral Pink
         darkPrimary: '#2C3E50',  // Darker primary for dark mode
         darkSecondary: '#34495E', // Darker secondary for dark mode
         darkAccent: '#E74C3C',    // Darker accent for dark mode
+        textPrimary: '#6B7280',   // Text color for dark mode
+      },
+      borderRadius: {
+        'mid': '10px',
+        'large': '17px',
       },
 
     },
