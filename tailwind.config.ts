@@ -13,6 +13,9 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily :{ 
+        athletic: ["athletic","sans-serif"],
+      },
       colors: {
         primary: '#A8D5BA',   // Soft Mint Green
         secondary: '#E6E3F1', // Light Lavender

@@ -2,6 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { LuLogOut, LuMenuSquare } from "react-icons/lu";
+import { TbFaceId } from "react-icons/tb";
 
 interface NavbarProps {}
 const Navbar = () => {
@@ -35,11 +37,11 @@ const Navbar = () => {
             alt="profile pic"
           />
           {/* dropdown */}
-          <div className={`absolute top-12 right-0 bg-secondary w-[170px] text-center p-3 rounded-mid`}>
+          <div className={`absolute ${isOpen ? "opacity-100" : "opacity-0"} top-12 right-0 bg-secondary w-[170px] text-left p-3 rounded-mid transition-all duration-300 ease-linear`}>
             <ul>
-                <li><Link href={'/'} className="text-textPrimary text-sm hover:underline">Item1</Link></li>
-                <li><Link href={'/'} className="text-textPrimary text-sm hover:underline">Item1</Link></li>
-                <li><Link href={'/'} className="text-textPrimary text-sm hover:underline">Item1</Link></li>
+                <li><Link href={'/'} className="text-textPrimary text-sm hover:underline flex items-center gap-3"><TbFaceId /> <span>Profile</span></Link></li>
+                <li><Link href={'/'} className="text-textPrimary text-sm hover:underline flex items-center gap-3"><LuMenuSquare /> <span>Dashboard</span></Link></li>
+                <li><button className="text-textPrimary text-sm hover:underline flex items-center gap-3"><LuLogOut /> <span>Logout</span></button></li>
             </ul>
           </div>
         </div>
