@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="p-5 bg-secondary">
+    <nav className="p-5 bg-white shadow-2xl container mx-auto">
       {/* wrapper */}
       <div className="max-w-7xl mx-auto flex items-center justify-between relative">
         {/* logo */}
@@ -37,7 +37,7 @@ const Navbar = () => {
             alt="profile pic"
           />
           {/* dropdown */}
-          <div className={`absolute ${isOpen ? "opacity-100" : "opacity-0"} top-12 right-0 bg-secondary w-[170px] text-left p-3 rounded-mid transition-all duration-300 ease-linear`}>
+          <div className={`absolute ${isOpen ? "opacity-100" : "opacity-0"} top-12 right-0 bg-white shadow-2xl w-[170px] text-left p-3 rounded-mid transition-all duration-300 ease-linear z-20`}>
             <ul>
                 <li><Link href={'/'} className="text-textPrimary text-sm hover:underline flex items-center gap-3"><TbFaceId /> <span>Profile</span></Link></li>
                 <li><Link href={'/'} className="text-textPrimary text-sm hover:underline flex items-center gap-3"><LuMenuSquare /> <span>Dashboard</span></Link></li>
