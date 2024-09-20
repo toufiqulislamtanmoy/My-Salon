@@ -1,6 +1,7 @@
 import Marquee from "react-fast-marquee";
 import { getDictionary } from "../../../getDictionary";
 import GamingSection from "@/components/Home/SideContent/GammingSection/GamingSectioin";
+import SerialContent from "@/components/Home/SerialContent/SerialContent";
 
 interface HomePageInterface {
   params: {
@@ -32,7 +33,8 @@ const Home = async ({ params: { lang } }: HomePageInterface) => {
       <section className="grid lg:grid-cols-[70%,30%] grid-cols-1 gap-3">
         {/* main section */}
         <div className="bg-white rounded-md shadow-2xl mt-5 container mx-auto p-5">
-          List of the appointment should be display here with count down timer
+          {/* serial card contain */}
+          <SerialContent/>
         </div>
         {/* side section/right section */}
         <div className="bg-white rounded-md shadow-2xl mt-5 container mx-auto p-5">
